@@ -3,7 +3,7 @@
   <img src='https://img.shields.io/badge/Drupal-0678BE?style=for-the-badge&logo=drupal&logoColor=white'>
 <div>
 
-### Docker-compose-assignment
+# Docker-compose-assignment
 
 Create a custom drupal website with a postgres database.
 
@@ -11,19 +11,16 @@ How to use:
 
 <ol>
   <li>
-  <h3>Configure Custom password in docker-compose.yml(under postgres enviropment)</h3>
+  <h5>Configure Custom password in docker-compose.yml(under postgres enviropment)</h5>
   </li>
   <li>
-  <h3>Run:</h3>
+  <h5>Run:</h5>
    <code>
     docker-compose-up
    </code>
   </li>
   <li>
-   <h3>Visit localhost:8080, follow the instructions :
-   <code>
-    databasename=postgres
-   </code>
+   <h5>Visit localhost:8080, follow the instructions :
    <code>
     databasename=postgres
    </code>
@@ -31,6 +28,15 @@ How to use:
    <code>
     databaseusername=postgres
    </code>
-   </h3>
+  </br>
+  Click on advanced and set:
+   <code>
+    host=postgres
+   </code>
+   </h5>
   </li>
 </ol>
+
+<h5>Tear Down :
+  <code>Docker compose down -v</code>
+to clear persistant data</h5>
